@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SPARK SHOP</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #18000a 0%, #4a001a 30%, #80002e 60%, #ff0040 85%, #d6006e 100%);
+            background-size: 400% 400%;
+            animation: meshGradient 12s ease infinite;
+            min-height: 100vh;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        @keyframes meshGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-frame {
+            width: 100%;
+            max-width: 800px;
+            background: rgba(18, 2, 8, 0.5);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 28px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+            padding: 48px 36px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(180deg, #ffffff, #ff99bb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 0, 85, 0.25);
+            border: 1px solid #ff0055;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #ff99bb;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .skills-grid {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .skill-item {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        /* Buttons Container */
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn-back, .btn-preview {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 28px;
+            font-weight: 700;
+            color: #ffffff;
+            border: 2px solid white;
+            border-radius: 50px;
+            transition: 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: white;
+            color: #d6006e;
+        }
+
+        .btn-preview {
+            background: rgba(255, 0, 85, 0.3);
+            border-color: #ff99bb;
+        }
+
+        .btn-preview:hover {
+            background: #ff0055;
+            color: white;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.6);
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <main class="glass-frame">
+        <div class="badge">Student Academic Project</div>
+        <h1>About SPARK SHOP</h1>
+        
+        <p>
+            Welcome to the About page of <strong>SPARK SHOP</strong>! This website is an interactive web development showcase created by Sahil, a Computer Science and Engineering student.
+        </p>
+        <p>
+            The main focus of this project is to explore modern web design techniques such as Glassmorphism, CSS Flexbox, custom animations, keyframe gradients, and responsive layouts.
+        </p>
+
+        <div class="skills-grid">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3 Animations</div>
+            <div class="skill-item">Glassmorphism UI</div>
+            <div class="skill-item">Responsive Design</div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="btn-group">
+            <a href="SPARK.index.html" class="btn-back">← Back to Main Page</a>
+            <a href="Previewer.html" class="btn-preview" target="_blank">📱 Device Previewer</a>
+        </div>
+    </main>
+
+</body>
+</html>
