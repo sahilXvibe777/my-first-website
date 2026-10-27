@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A modern interactive educational page about the environment.">
+<title>Our Environment | Modern Learning Page</title>
+<style>
+:root{
+  --bg:#071a14; --card:rgba(255,255,255,.09); --card2:rgba(255,255,255,.13);
+  --text:#f3fff8; --muted:#c5d9cf; --accent:#5ee58b; --accent2:#36c8a0;
+  --line:rgba(255,255,255,.14); --shadow:0 20px 60px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+  margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);
+  background:
+    radial-gradient(circle at 10% 10%,rgba(54,200,160,.25),transparent 30%),
+    radial-gradient(circle at 90% 20%,rgba(94,229,139,.18),transparent 28%),
+    linear-gradient(135deg,#06130f,#0b241b 55%,#071a14);
+  line-height:1.65;
+}
+header{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  backdrop-filter:blur(16px);background:rgba(5,20,15,.72);
+  border-bottom:1px solid var(--line);
+}
+.nav{max-width:1150px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:1.2rem;letter-spacing:.5px}.logo span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-weight:600;font-size:.92rem}
+nav a:hover{color:var(--accent)}
+.hero{min-height:88vh;display:grid;place-items:center;padding:130px 22px 70px;text-align:center}
+.hero-inner{max-width:900px;animation:rise .9s ease both}
+.badge{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--accent);font-weight:700}
+h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin:22px 0;background:linear-gradient(90deg,#fff,var(--accent),#a7f3d0);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:760px;margin:0 auto 30px}
+.btn{display:inline-block;border:0;border-radius:12px;padding:13px 20px;margin:5px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#052016;font-weight:800;text-decoration:none;cursor:pointer;box-shadow:0 10px 30px rgba(54,200,160,.2);transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(54,200,160,.35)}
+.btn.secondary{background:var(--card);color:var(--text);border:1px solid var(--line);box-shadow:none}
+section{max-width:1150px;margin:auto;padding:75px 22px}
+.section-title{text-align:center;font-size:2.4rem;margin:0 0 12px}.section-sub{text-align:center;color:var(--muted);margin:0 auto 35px;max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.card{
+  background:linear-gradient(145deg,var(--card),rgba(255,255,255,.04));
+  border:1px solid var(--line);border-radius:22px;padding:25px;
+  box-shadow:var(--shadow);transition:.3s;position:relative;overflow:hidden
+}
+.card:before{content:"";position:absolute;inset:-80px auto auto -80px;width:160px;height:160px;background:var(--accent);filter:blur(80px);opacity:.08}
+.card:hover{transform:translateY(-7px);background:var(--card2)}
+.icon{font-size:2.3rem}.card h3{margin:10px 0 6px}.card p{color:var(--muted);margin:0}
+.highlight{border-left:4px solid var(--accent);padding-left:18px}
+.challenge{display:flex;gap:18px;align-items:flex-start}
+.number{font-size:1.5rem;font-weight:900;color:var(--accent)}
+#topBtn{position:fixed;right:22px;bottom:22px;display:none;border:0;border-radius:50%;width:48px;height:48px;background:var(--accent);font-size:20px;cursor:pointer}
+footer{text-align:center;padding:40px 20px;color:var(--muted);border-top:1px solid var(--line)}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@media(max-width:800px){nav a{margin-left:9px;font-size:.8rem}.grid,.grid.four{grid-template-columns:1fr}.hero{min-height:80vh}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">🌍 Eco<span>Learn</span></div>
+    <nav>
+      <a href="#components">Components</a>
+      <a href="#spheres">Spheres</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#protect">Protect</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <span class="badge">🌱 Environmental Awareness</span>
+    <h1>Our Environment</h1>
+    <p>An environment is everything around us, including all living and non-living things that interact to sustain life on Earth.</p>
+    <a class="btn" href="#components">Start Learning ↓</a>
+    <a class="btn secondary" href="#protect">How to Help</a>
+  </div>
+</section>
+
+<section id="components">
+  <h2 class="section-title">Components of the Environment</h2>
+  <p class="section-sub">The environment is made up of living and non-living elements that interact with one another.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="icon">🌿</div><h3>Biotic Components</h3>
+      <p>All living things like plants, animals, birds, and microorganisms.</p>
+    </article>
+    <article class="card">
+      <div class="icon">💧</div><h3>Abiotic Components</h3>
+      <p>Non-living elements such as air, water, soil, sunlight, and temperature.</p>
+    </article>
+  </div>
+</section>
+
+<section id="spheres">
+  <h2 class="section-title">Earth's Four Major Spheres</h2>
+  <p class="section-sub">Four connected systems help make Earth a place where life can exist.</p>
+  <div class="grid four">
+    <article class="card"><div class="icon">☁️</div><h3>Atmosphere</h3><p>The layer of gases surrounding the planet.</p></article>
+    <article class="card"><div class="icon">🌊</div><h3>Hydrosphere</h3><p>All the water on Earth.</p></article>
+    <article class="card"><div class="icon">🪨</div><h3>Lithosphere</h3><p>The solid rock and soil outer shell.</p></article>
+    <article class="card"><div class="icon">🦋</div><h3>Biosphere</h3><p>The global zone where life exists.</p></article>
+  </div>
+</section>
+
+<section id="challenges">
+  <h2 class="section-title">Major Environmental Challenges</h2>
+  <p class="section-sub">Understanding major problems is the first step toward protecting our planet.</p>
+  <div class="grid">
+    <article class="card challenge"><div class="number">01</div><div><h3>Climate Change</h3><p>Driven by greenhouse gas emissions and deforestation.</p></div></article>
+    <article class="card challenge"><div class="number">02</div><div><h3>Pollution</h3><p>Contamination of air, water, and soil with chemicals and plastics.</p></div></article>
+    <article class="card challenge"><div class="number">03</div><div><h3>Biodiversity Loss</h3><p>The rapid decline and extinction of plant and animal species.</p></div></article>
+  </div>
+</section>
+
+<section id="protect">
+  <h2 class="section-title">Ways to Protect the Environment</h2>
+  <p class="section-sub">Small actions can contribute to a healthier and more sustainable environment.</p>
+  <div class="grid">
+    <article class="card highlight"><h3>♻️ The Three Rs</h3><p>Reduce consumption, reuse items, and recycle materials.</p></article>
+    <article class="card highlight"><h3>☀️ Renewable Energy</h3><p>Switch to clean power sources like solar and wind energy.</p></article>
+    <article class="card highlight"><h3>🌳 Conservation</h3><p>Protect natural habitats and plant new trees to maintain sustainability.</p></article>
+    <article class="card highlight"><h3>🌎 Stay Informed</h3><p>Learn about global conservation efforts and environmental facts.</p></article>
+  </div>
+  <div style="text-align:center;margin-top:35px">
+    <a class="btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top ↑</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>🌱 EcoLearn</strong><br>
+  Thanks for reading — protect our planet, one action at a time.
+</footer>
+
+<button id="topBtn" aria-label="Back to top">↑</button>
+
+<script>
+const topBtn=document.getElementById("topBtn");
+window.addEventListener("scroll",()=>{topBtn.style.display=scrollY>500?"block":"none"});
+topBtn.onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+</script>
+</body>
+</html>
