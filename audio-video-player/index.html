@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+
+/* YouTube and Normal Video Responsive Size */
+
+iframe,
+video {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+    iframe,
+    video {
+        max-width: 100%;
+    }
+}
+
+    
+  </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HTML Audio and Video Lab</title>
