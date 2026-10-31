@@ -1,4 +1,27 @@
 /* General Styling */
+
+/* YouTube and Normal Video Responsive Size */
+
+iframe,
+video {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+    iframe,
+    video {
+        max-width: 100%;
+    }
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fcf8f2;
