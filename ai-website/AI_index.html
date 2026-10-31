@@ -6,6 +6,29 @@
     <title>Document</title>
     
 <style>
+    
+/* YouTube and Normal Video Responsive Size */
+
+iframe,
+video {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+    iframe,
+    video {
+        max-width: 100%;
+    }
+}
+
     body {
         background-color: #99add4;
         color: #1e293b;
