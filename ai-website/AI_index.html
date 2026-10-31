@@ -91,6 +91,81 @@ video {
     outline: 3px solid orange;
     outline-offset: 3px;
  }
+    
+/* AI Website Responsive Fix */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+header, main, section, footer {
+    width: 100%;
+    max-width: 100%;
+}
+
+section {
+    padding: 15px;
+    margin: 12px 0;
+}
+
+h1 {
+    font-size: clamp(24px, 6vw, 36px);
+    overflow-wrap: anywhere;
+}
+
+h2, h3, p, li {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+pre {
+    max-width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, li {
+        font-size: 15px;
+    }
+}
+
 
 </style>
 
