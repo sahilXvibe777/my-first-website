@@ -7,3 +7,4 @@ The homepage links to all projects. Environment has two versions in one card. SP
 GITHUB PAGES: Upload the CONTENTS of this folder to the root of your GitHub repository (not the outer ZIP folder). Make sure index.html is in the repository root. Then open Settings > Pages and select Deploy from a branch > main > /(root).
 
 Notes: Some media is loaded from external URLs used in the original HTML. Those links require internet access.
+URL : https://sahilxvibe777.github.io/my-first-website/
