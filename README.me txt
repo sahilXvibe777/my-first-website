@@ -1,10 +1,23 @@
-MY WEB PROJECTS PORTFOLIO
+# 🌐 My First Portfolio Website
 
-START HERE: index.html
+Welcome to my very first web development project! This website marks the beginning of my journey into Computer Science & Engineering (CSE) and front-end web development.
 
-The homepage links to all projects. Environment has two versions in one card. SPARK SHOP X has three pages in one card.
+🔗 **Live Demo:** [https://sahilxvibe777.github.io/my-first-website/](https://sahilxvibe777.github.io/my-first-website/)
 
-GITHUB PAGES: Upload the CONTENTS of this folder to the root of your GitHub repository (not the outer ZIP folder). Make sure index.html is in the repository root. Then open Settings > Pages and select Deploy from a branch > main > /(root).
+---
 
-Notes: Some media is loaded from external URLs used in the original HTML. Those links require internet access.
-URL : https://sahilxvibe777.github.io/my-first-website/
+## 📌 About The Project
+This project was built to understand the core building blocks of web application design, layout structuring, and hosting fundamentals. 
+
+## 🌟 Key Highlights
+- **Responsive Layout:** Basic structural styling built with fundamental HTML & CSS.
+- **GA4 Connected:** Configured with **Google Analytics 4** to monitor live site visitors and real-time metrics.
+- **GitHub Pages Integration:** Fully deployed and hosted live on GitHub Pages.
+
+## 🛠️ Tech Stack
+- **Languages:** HTML5, CSS3
+- **Analytics:** Google Analytics 4 (GA4)
+- **Hosting:** GitHub Pages
+
+---
+*Built while exploring front-end technologies during CSE Diploma.*
